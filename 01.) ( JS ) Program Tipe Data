@@ -1,0 +1,29 @@
+function judul(){
+console.log("=====================================================");
+console.log("              SELAMAT DATANG DI PROGRAM              ");
+console.log("                MENGETAHUI TIPE DATA                 ");
+console.log("=====================================================");
+}
+
+
+judul();
+console.log("1.) TIPE DATA INTEGER");
+let data_integer = 0;
+console.log("Data   : " + data_integer);
+console.log("Bertipe   : "+ typeof data_integer + "\n");
+
+console.log ("2.) TIPE DATA FLOAT")
+let data_float = 6.08;
+console.log("Data   : " + data_float);
+console.log("Bertipe   : "+ typeof data_float + "\n");
+
+console.log("3.) TIPE DATA STRING")
+let data_string = 'Ikko Cahya Awinata';
+console.log ("Data : " + data_string);
+console.log("Bertipe : " + typeof data_string + "\n")
+
+
+console.log("4.) TIPE DATA ")
+let data_bool = true;
+console.log ("Data : " + data_bool);
+console.log("Bertipe : " + typeof data_bool + "\n")
