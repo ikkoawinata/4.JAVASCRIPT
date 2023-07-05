@@ -1,0 +1,171 @@
+const prompt = require('prompt-sync')();
+
+
+
+function judul(){
+    console.log("=====================================================");
+    console.log("              SELAMAT DATANG DI PROGRAM              ");
+    console.log("    T O K O  M I N U M A N  Y U N I K  I K K O       ");
+    console.log("=====================================================");
+}
+
+
+function Tabel() {
+    console.log(" No. |\t    DAFTAR MINUMAN \t|  \t HARGA \t    |");
+    console.log("====================================================");
+    console.log(" 1.  | Jus Jeruk                | Rp.         20.000|");
+    console.log(" 2.  | Kopi Janji Jiwa          | Rp.         18.000|");
+    console.log(" 3.  | Mixue Lemon Tea          | Rp.         16.000|");
+    console.log(" 4.  | Es Campur Doger          | Rp.         15.000|");
+    console.log(" 5.  | Milk Shake               | Rp.         13.500|");
+    console.log(" 6.  | Lemon Tea                | Rp.         10.000|");
+    console.log(" 7.  | Capuccino Expresso       | Rp.         10.000|");
+    console.log(" 8.  | Ice Tea                  | Rp.          6.000|");
+    console.log(" 9.  | Air Mineral Unesa        | Rp.          3.500|");
+    console.log("======================================================");
+}
+
+judul();
+Tabel();
+
+var p, number,hasil1, hasil2, hasil3, hasil4, hasil5, hasil6, hasil7, hasil8, hasil9,nama,d, satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, n, total;
+
+console.log("SELAMAT DATANG DI RESTAURANT MINUMAN YUNIK");
+
+do{
+var d = prompt("Tanggal Pesanan [dd/mm/yyyy]: ")
+var number = parseFloat(prompt("Silahkan ketik nomor natrian [1-3 digit] :"))
+var nama =  prompt("Untuk nama pesanan atas nama siapa : ");
+console.log();
+
+
+var p = parseFloat(prompt("Silahkan kakak mau pesan apa [1/2/3/4/5/6/7/8/9/] : "));
+if (p == 1){
+console.log("\t1.)----- Jus Jeruk ------")
+   var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih [Jus_Jeruk] : "));
+   var n = parseFloat(prompt("Mau pesan berapa : "));
+   hasil = n * 20000;
+   console.log("Total harganya untuk pesanan Jus Jeruk " ,hasil," ribu" )
+}
+
+else if (p == 2){
+    console.log("\t2.)----- Kopi Janji Jiwa ------")
+    var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih [Kopi_Janji_Jiwa] : "));
+    var n = parseFloat(prompt("Mau pesan berapa : "));
+    hasil = n * 18000;
+    console.log("Total harganya untuk pesanan Kopi Janji Jiwa " ,hasil," ribu" )
+ }
+ 
+ else if (p == 3){
+    console.log("\t3.)----- Mixue Lemon Tea ------")
+    var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih [Mixue_Lemon_Tea] : "));
+    var n = parseFloat(prompt("Mau pesan berapa : "));
+    hasil = n * 16000;
+    console.log("Total harganya untuk pesanan Mixue Lemon Tea " ,hasil," ribu" )
+ }
+ 
+
+ else if (p == 4){
+    console.log("\t4.)------ Es Campur Doger  ------")
+    var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih [Es_Campur_Doger] : "));
+    var n = parseFloat(prompt("Mau pesan berapa : "));
+    hasil = n * 15000;
+    console.log("Total harganya untuk pesanan Es Campur Doger  " ,hasil," ribu" )
+ }
+ 
+
+ else if (p == 5){
+    console.log("\t5.)------ Milk Shake ------")
+    var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih  [Milk_Shake] : "));
+    var n = parseFloat(prompt("Mau pesan berapa : "));
+    hasil = n * 13500;
+    console.log("Total harganya untuk pesanan Milk Shake " ,hasil," ribu" )
+ }
+ 
+ 
+ else if (p == 6){
+    console.log("\t6.)------  Lemon Tea ------")
+    var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih [Lemon_Tea]  : "));
+    var n = parseFloat(prompt("Mau pesan berapa : "));
+    hasil = n * 10000;
+    console.log("Total harganya untuk pesanan Milk Shake " ,hasil," ribu" )
+ }
+
+ else if (p == 7){
+    console.log("\t7.)------ Cappucino Expresso ------")
+    var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih [Cappucino_Expresso]  : "));
+    var n = parseFloat(prompt("Mau pesan berapa : "));
+    hasil = n * 10000;
+    console.log("Total harganya untuk pesanan Milk Shake " ,hasil," ribu" )
+ }
+
+ else if (p == 8){
+    console.log("\t8.)------Ice Tea ------")
+    var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih [Ice_Tea]   : "));
+    var n = parseFloat(prompt("Mau pesan berapa : "));
+    hasil = n * 8000;
+    console.log("Total harganya untuk pesanan Milk Shake " ,hasil," ribu" )
+ }
+
+ else if (p == 9){
+    console.log("\t9.)-----Air Mineral Unesa ------")
+    var satu = parseFloat(prompt("Ketik ulang nama minuman yang dipilih [AIr_Mineral_Unesa]   : "));
+    var n = parseFloat(prompt("Mau pesan berapa : "));
+    hasil = n * 3500;
+    console.log("Total harganya untuk pesanan Milk Shake " ,hasil," ribu" )
+ }
+
+ else{
+
+    console.log("Pilihan tidak ditemukan");
+    console.log("Silahkan pilih sesuai dengan yg ada pada tabel");
+ }
+ console.log();
+ var j = prompt("Mau coba program lagi ? [Y/N] : ");
+}
+while ( j == 'Y' || j == 'y');
+
+
+
+
+
+
+console.log("");
+console.log("=================================================================================================\t");
+console.log("|                                                                                            \t|");
+console.log("|                       R E S T A U R A N T   M I N U M A N   Y U N I K                      \t|");
+console.log("|                                   Jalan Sampoerna No. 12 B                                 \t|");
+console.log("|                                  Kecamatan Pabean Cantikan                                 \t|");
+console.log("|                                      ' 081233075270 '                                      \t|");
+console.log("|                                                                                            \t|");
+console.log("|============================================================================================\t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                 ", d, "           \t|");
+console.log("|                                                                                            \t|");
+console.log("|      Author   : 'IKKO AWINATA'                                                             \t|");
+console.log("|      Customer : ", nama , "                                                                \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                          P  E  S  A  N  A  N      N  O  M  O  R                            \t|");
+console.log("|                   ____________________________________________________                     \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                           ", number, "                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("|                 SILAHKAN DIAMBIL PESANANNYA SESUAI DENGAN NOMOR ANTRIAN                    \t|");
+console.log("|                                                                                            \t|");
+console.log("|                                                                                            \t|");
+console.log("===============================================================================================\t");
+console.log("");
+console.log(" Pesanan atas nama",nama,"silahkan diambil pesanannya.");
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+console.log("Terima kasih telah menggunakan program ini");
+console.log("Made by Ikkoc_awinata");
