@@ -1,0 +1,82 @@
+//ini sebagai include pada JAVASCRIPT
+const prompt = require('prompt-sync')();
+
+function judul(){
+    console.log("=====================================================");
+    console.log("              SELAMAT DATANG DI PROGRAM              ");
+    console.log("                KALKULATOR SEDERHANA                 ");
+    console.log("=====================================================");
+}
+
+function table(){
+    console.log("|                     PILIH OPERATOR                  |")
+    console.log("=====================================================");
+    console.log("1. |PENJUMLAHAN                                       |")
+    console.log("2. |PENGURANGAN                                       |")
+    console.log("3. |PERKALIAN                                         |")
+    console.log("4. |PEMBAGIAN                                         |")
+    console.log("5. |MODULUS                                           |")
+    console.log("=====================================================");
+}
+judul();
+do{
+table();
+var a, b, hasil;
+var masukan, j;
+
+console.log("");
+var a = parseFloat(prompt("Masukkan angka pertama : "));
+var b = parseFloat(prompt("Masukkan angka kedua : "));
+console.log("=========================================");
+
+
+masukan = (prompt("Masukkan operator sesuai pada tabel diatas [1/2/3/4/5] : "));
+
+if (masukan == 1){
+        console.log("------ 1.) PENJUMLAHAN ------");
+        hasil = a + b;
+        console.log(a, " + ", b, " = " + hasil);
+        console.log("Hasilnya = " + hasil);
+}
+
+
+else if (masukan == 2){
+    console.log("------ 2.) PENGURANGAN ------");
+    hasil = a - b;
+    console.log(a, " - ", b, " = " + hasil);
+    console.log("Hasilnya = " + hasil);
+}
+
+
+else if (masukan == 3){
+    console.log("------ 3.) PERKALIAN ------");
+    hasil = a * b;
+    console.log(a, " * ", b, " = " + hasil);
+    console.log("Hasilnya = " + hasil);
+}
+
+else if (masukan == 4){
+    console.log("------ 4.) PEMBAGIAN ------");
+    hasil = a / b;
+    console.log(a, " / ", b, " = " + hasil);
+    console.log("Hasilnya = " + hasil);
+}
+
+else if (masukan == 5){
+    console.log("------ 5.) MODULUS ------");
+    hasil = a % b;
+    console.log(a, " % ", b, " = " + hasil);
+    console.log("Hasilnya = " + hasil);
+}
+
+else{
+    console.log("Pilihan tidak sesuai dengan yg di tabel");
+    console.log("Silahkan pilih sesuai yang ada pada tabel");
+}
+console.log("");
+var j = (prompt("Mau coba lagi ? "));
+}
+while (j == "Y" || j == "y");
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+console.log("Terima kasih telah menggunakan program ini");
+console.log("Made by Ikkoc_awinata");
