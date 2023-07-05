@@ -1,0 +1,15 @@
+function judul(){
+    console.log("=====================================================");
+    console.log("              SELAMAT DATANG DI PROGRAM              ");
+    console.log("              PERULANGAN WHILE JAVASCRIPT                 ");
+    console.log("=====================================================");
+}
+
+judul();
+
+let n = 1;
+
+while(n <=5){
+console.log("I Wanna Be yours");
+n++;
+}
