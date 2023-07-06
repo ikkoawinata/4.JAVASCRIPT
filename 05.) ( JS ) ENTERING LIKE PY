@@ -1,0 +1,23 @@
+function welcome() {
+        console.log("===========================================================");
+        console.log("            P    R    O    G     R     A     M            ");
+        console.log("                 ENTERING LIKE PYTHON                    ");
+        console.log("===========================================================");
+      }
+
+
+function main() {
+    const readline = require('readline');
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+    
+    welcome();
+    rl.question ('Enter untuk lanjut', function(input){
+        console.log(" i love you");
+        rl.close();
+    });
+}
+
+main();
