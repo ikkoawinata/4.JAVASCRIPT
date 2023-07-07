@@ -1,0 +1,35 @@
+const prompt = require('prompt-sync')();
+
+
+
+function welcome() {
+    console.log("===============================================================");
+    console.log("       S E L A M A T  D A T A N G  D I  P R O G R A M ");
+    console.log("                 MENENTUKAN NILAI PREDIKAT IPK");
+    console.log("===============================================================");
+}
+
+welcome();
+
+var NIM,IPK, MHS,j;
+
+do{
+var MHS = prompt("Masukkan nama mahasiswa : ");
+var NIM = prompt("Masukkan NIM mahasiswa : ");
+var IPK = parseFloat(prompt("Masukan IPK mahasiswa (Example = 3.50) :"))
+
+
+if ( IPK >= 4.00){
+    console.log(" Saudara ", MHS, " dengan NIM ", NIM, " dinyatakan lulus dengan predikat CUMLAUDE dengan mendapatkan nilai ", IPK);
+}else if ( IPK >= 3.49){
+    console.log(" Saudara ", MHS, " dengan NIM ", NIM, " dinyatakan lulus dengan mendapatkan nilai ", IPK);
+}else if ( IPK >= 2.99){
+    console.log(" Saudara ", MHS, " dengan NIM ", NIM, " dinyatakan mengulang mata kuliah yang di ambil dengan mendapatkan nilai ", IPK);
+}else if ( IPK >= 1.99){
+    console.log(" Saudara ", MHS, " dengan NIM ", NIM, " dinyatakan tidak lulus dengan mendapatkan nilai ", IPK);
+}
+var j = prompt("ingin coba program lagi ? [Y/N] :")
+}
+while ( j == 'Y' || j == 'y')
+console.log("Terima kasih telah menggunakan program ini")
+console.log("Made by ikkoc_awinata")
