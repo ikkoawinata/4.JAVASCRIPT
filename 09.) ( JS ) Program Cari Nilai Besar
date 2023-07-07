@@ -1,0 +1,35 @@
+const readline = require('readline');
+const prompt = require('prompt-sync')();
+
+function welcome() {
+    console.log("===========================================================");
+    console.log("S E L A M A T  D A T A N G  D I  P R O G R A M ");
+    console.log("              MENCARI NILAI TERBESAR ");
+    console.log("===========================================================");
+    }
+
+    welcome();
+
+    var a,b,c,maks,j
+
+    do{
+    var a = parseInt(prompt("Masukkan nilai a : "))
+    var b = parseInt(prompt("Masukkan nilai b : "))
+    var c = parseInt(prompt("Masukkan nilai c : "))
+
+    if ( a > b){
+         maks = a;
+    }else{
+        maks = b;
+    }
+
+    if (c > maks){
+        maks = c;
+    }console.log("Nilai terbesarnya adalah : ", maks);
+    console.log();
+    var j = prompt("Mau coba lagi ? [Y/N] : ")
+}
+while( j == 'Y' || j == 'y');
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+console.log("Terima kasih telah menggunakan program ini")
+console.log("Made by Ikkoc_awinata")
