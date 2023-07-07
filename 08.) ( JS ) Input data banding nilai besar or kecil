@@ -1,0 +1,43 @@
+function welcome() {
+    console.log("===============================================================");
+    console.log("       S E L A M A T  D A T A N G  D I  P R O G R A M ");
+    console.log("INPUT DATA DAN MENENTUKAN NILAI DATA TERKECIL DAN TERBESAR");
+    console.log("===============================================================");
+}
+
+function findMinMax() {
+    console.log("PROGRAM JavaScript BILANGAN TERKECIL DAN TERBESAR");
+
+    let n;
+    let terkecil, terbesar, bil;
+    let j;
+
+    do {
+        n = parseInt(prompt("Masukan Banyaknya data yang akan dimasukkan: "));
+
+        terkecil = Number.MAX_SAFE_INTEGER;
+        terbesar = Number.MIN_SAFE_INTEGER;
+
+        for (let i = 1; i <= n; i++) {
+            bil = parseFloat(prompt(`Masukan Bilangan Ke-${i}: `));
+
+            if (bil < terkecil) {
+                terkecil = bil;
+            }
+
+            if (bil > terbesar) {
+                terbesar = bil;
+            }
+        }
+
+        console.log(`\nNilai Terkecil adalah: ${terkecil.toFixed(2)}`);
+        console.log(`Nilai Terbesar adalah: ${terbesar.toFixed(2)}`);
+
+        j = prompt("Coba lagi? [Y/N]: ");
+    } while (j.toUpperCase() === 'Y');
+    
+    console.log("Terima kasih");
+}
+
+welcome();
+findMinMax();
