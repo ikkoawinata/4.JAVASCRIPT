@@ -1,0 +1,38 @@
+// setiap nanti ada masukan dari user harus ada fungsi dibawah ini
+const prompt = require('prompt-sync')();
+
+function welcome(){
+    console.log("=========================================================");
+    console.log("   S E L A M A T  D A T A N G  D I  P R O G R A M ");
+    console.log("MEMBANDINGKAN BILANGAN INTEGER DAN MENGELUARKAN PESAN");
+    console.log("=========================================================");
+  }
+
+  welcome();
+
+
+  var a, b,j;
+
+
+  do{
+  var a = parseInt(prompt("Masukkan nilai integer a : "))
+  var b = parseInt(prompt("Masukkan nilai integer b : "))
+
+  if (a > b){
+    console.log("Nilai A lebih besar dari nilai B ");
+  }
+
+  else if ( a < b){
+    console.log("Nilai A lebih kecil dari nilai B");
+  }
+
+  else if ( a == b){
+    console.log("Nilai A sama besar dengan nilai B");
+  }
+  var j = prompt("Mau coba lagi ? [Y/N] : ")
+}
+while ( j == 'Y' || j == 'y'){
+    console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    console.log("TErima kasih telah menggunakan prigram ini");
+    console.log("Made by ikkoc_awinata")
+}
