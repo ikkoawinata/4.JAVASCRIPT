@@ -1,0 +1,32 @@
+const prompt = require('prompt-sync')();
+
+function welcome(){
+    console.log("=========================================================");
+    console.log("   S E L A M A T  D A T A N G  D I  P R O G R A M ");
+    console.log("          PEMBAGIAN MENGELUARKAN PESAN");
+    console.log("=========================================================");
+  }
+
+  welcome();
+
+  var a, b, hasil, j;
+
+
+  do{
+
+  var a = parseInt(prompt("Masukkan bilangan a (pembilang) : "))
+  var b = parseInt(prompt("Masukkan bilangan b (penyebut)  :"))
+
+  if(b ==0){
+    console.log("Tidak dapat dibagi dengan angka nol, maka hasilnya tetap")
+  }else{
+    hasil = a/b;
+    console.log("Hasil dari pembagian ",a, " / ", b, " = ", hasil);
+    console.log();
+  }var j = prompt("Mau coba lagi ? [Y/N] :")
+
+
+}while ( j == 'Y' || j == 'y')
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+console.log("Terima kasih telah menggunakan program ini");
+console.log("Made by ikkoc_awinata");
