@@ -1,0 +1,34 @@
+const prompt = require('prompt-sync')();
+
+function welcome(){
+console.log("===========================================================");
+console.log("    S E L A M A T  D A T A N G  D I  P R O G R A M ");
+console.log("    HARGA BELI, HARGA JUAL, DAN PENDAPATAN UNTUNG ");
+console.log("                      JAVASCRIPT                   ")
+console.log("===========================================================");
+
+}
+
+welcome();
+
+var HJ, HB, PU, j;
+
+do{
+var HB = parseInt(prompt("Msukkan harga beli barang : "));
+
+console.log();
+console.log("Hitung PU (Pendapatan Untung")
+PU = HB * 30/100;
+console.log("Harga beli nya adalah : Harga beli * 30/100 = ", HB, " * 30/100 = ", PU);
+console.log();
+
+
+console.log("Hitung HJ ( Harga Jual")
+HJ = PU + HB;
+console.log(" hasil jual dari penjumlahan PU adalah : HJ = PU + HB = ",PU, " + ", HB, " = ", HJ)
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+
+var j = prompt("mau coba lagi ? [Y/N] :")
+}while ( j == 'Y' || j == 'y')
+console.log("Terima kasih telah menggunakan program ini")
+console.log("made by ikkoc_awinata")
