@@ -1,0 +1,132 @@
+const prompt = require('prompt-sync')();
+
+function welcome(){
+    console.log("===============================================================");
+    console.log("       S E L A M A T  D A T A N G  D I  P R O G R A M ");
+    console.log("             M E N E N T U K A N    S U H U");
+    console.log("===============================================================");
+}
+
+
+function table(){
+    console.log("========================================");
+    console.log("No.|             Nama Suhu              |");
+    console.log("========================================");
+    console.log("1  .| Derajat Celcius    -> Fahrenheit  |");
+    console.log("2  .| Derajat Fahrenheit -> Celcius     |");
+    console.log("3  .| Derajat Reamur     -> Fahrenheit  |");
+    console.log("4  .| Derajat Fahrenheit -> Reamur      |");
+    console.log("5  .| Derajat Reamur     -> Celcius     |");
+    console.log("6  .| Derajat Celcius    -> Reamur      |");
+    console.log("7  .| Derajat Kelvin     -> Celcius     |");
+    console.log("8  .| Derajat Celcius    -> Kelvin      |");
+    console.log("9  .| Derajat Kelvin     -> Fahrenheit  |");
+    console.log("10 .| Derajat Fahrenheit -> Kelvin      |");
+    console.log("11 .| Derajat Kelvin     -> Reamur      |");
+    console.log("12 .| Derajat Reamur     -> Kelvin      |");
+    console.log("========================================");
+}
+
+welcome();
+table();
+
+var j, pil, c,r,f,k;
+do{
+var pil = parseInt(prompt("Masukkan pilihan anda sesuai dengan tabel : "))
+console.log();
+
+if ( pil == 1){
+    console.log("---- 1.) Anda memilih Celcius -> Fahrenheit ----")
+    var c = parseInt(prompt("Masukkan suhu celscius yang diketahui :"))
+    f = (9.0/5.0 * c) + 32;
+    console.log("Rumusnya yaitu : 9/5 * C + (32) = 9/5 * ",c, " + (32) = ", f)
+}
+
+else if ( pil == 2){
+    console.log("---- 2.) Anda memilih Fahrenheit -> Celcius ----")
+    var f = parseInt(prompt("Masukkan suhu fahrenheit yang diketahui :"))
+    c = 5.0/9.0 * (f - (32));
+    console.log("Rumusnya yaitu : 5/9 * (f - (32) = 9/5 * (",f, " - (32)) = ", c, )
+}
+
+
+else if ( pil == 3){
+    console.log("---- 3.) Anda memilih Reamur -> Fahrenheit ----")
+    var f = parseInt(prompt("Masukkan suhu reamur yang diketahui :"))
+    f = (9.0/4.0 * r) + (32);
+    console.log("Rumusnya yaitu : (9/4 * r) + (32)  = (9/4 * ",r," ) + (32) = ",f)
+}
+
+
+else if ( pil == 4){
+    console.log("---- 4.) Anda memilih Fahrenheit -> Reamur ----")
+    var f = parseInt(prompt("Masukkan suhu fahrenheit yang diketahui :"))
+    r = 4.0/9.0 *(f - 32);
+    console.log("Rumusnya yaitu : 4/9 * (f + 32)  = 4/9 * ( ",f, " - 32 ) = ", r);
+}
+
+else if ( pil == 5){
+    console.log("---- 5 .) Anda memilih Reamur -> Celcius ----")
+    var r = parseInt(prompt("Masukkan suhu reamur yang diketahui :"))
+    c = 5.0/4.0 * r;
+    console.log("Rumusnya yaitu : 5/4 * r = 5/4 * ", r, " = ", c);
+}
+
+else if ( pil == 6){
+    console.log("---- 6 .) Anda memilih Celcius -> Reamur ----")
+    var c = parseInt(prompt("Masukkan suhu celcius yang diketahui : "))
+    r = 4.0/5.0 * c;
+    console.log("Rumusnya yaitu : 4/5 * C = 4/5 * ",c, " = ", r);
+}
+
+else if ( pil == 7){
+    console.log("---- 7.) Anda memilih Kelvin -> Celcius  ----")
+    var k = parseInt(prompt("Masukkan suhu kelvin yang diketahui : "))
+    c = 273 - k;
+    console.log("Rumusnya yaitu : c = 273 - k = 273 - ", k, " = ", c)
+}
+
+
+else if ( pil == 8){
+    console.log("---- 8 .) Anda memilih Celcius -> Kelvin ----")
+    var c = parseInt(prompt("Masukkan suhu celcius yang diketahui : "))
+    k = 273 - c;
+    console.log("Rumusnya yaitu : k = 273 - c = 273 - ", c, " = ", k)
+}
+
+
+else if ( pil == 9){
+    console.log("---- 9.) Anda memilih Kelvin -> Fahrenheit  ----")
+    var k = parseFloat(prompt("Masukkan suhu kelvin yang diketahui : "))
+    f = 9.0/5.0 * (k-273) +32;
+    console.log("Rumusnya yaitu : 9/5 * (k - 273) + 32 = 9/5 * ( ", k, " - 273 ) + 32 = ", f);
+}
+
+
+else if ( pil == 10){
+    console.log("---- 10 .) Anda memilih Fahrenheit -> Kelvin  ----")
+    var f = parseInt(prompt("Masukkan suhu fahrenheit yang diketahui : "))
+    k = 5/9 * (f - 32) + 273;
+    console.log("Rumusnya yaitu : 5/9 * (f - 32) + 273 = 5/9 * ( ",f, " - 32 ) + 273 = ", k)
+}
+
+
+else if ( pil == 11){
+    console.log("---- 11 .) Anda memilih Kelvin -> Reamur  ----")
+    var k = parseInt(prompt("Masukkan suhu kelvin yang diketahui : "))
+    r =( 4.0/5.0 * k)  + 273;
+    console.log("Rumusnya yaitu : 4/5 * ( k - 273) = 4/5 * ( ", k, " - 273 ) = ", r)
+}
+
+else if ( pil == 12){
+    console.log("---- 12 .) Anda memilih Reamur -> Kelvin  ----")
+    var r = parseInt(prompt("Masukkan suhu reamur yang diketahui : "))
+    k = (5.0/4.0 * r)  + 273;
+    console.log("Rumusnya yaitu : 5/4 * ( k + 273) = 5/4 * ( ", r, " + 273 ) = ", k)
+}
+console.log();
+var j = prompt("coba lagi  [Y/N] : ");
+}while (j == 'Y' || j == 'y')
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+console.log("Terima kasih telah menggunakan program ini")
+console.log("made by ikkoc_awinata")
