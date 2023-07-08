@@ -1,0 +1,72 @@
+const readline = require('readline');
+const prompt = require('prompt-sync')();
+
+function loginSystem() {
+    console.log("==========================================================");
+    console.log("              SELAMAT DATANG DI PROGRAM                   ");
+    console.log("            PEMBUATAN AKUN DAN PASSWORD                   ");
+    console.log("==========================================================");
+
+    let i = 0;
+    let user, pass, login, x, y;
+    let j;
+
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+
+    const createAccount = () => {
+        console.log("Silahkan Buat Akun Dulu yah");
+        rl.question("Username : ", (username) => {
+            user = username;
+            rl.question("Password : ", (password) => {
+                pass = password;
+                console.clear();
+                console.log("Akun Sudah Dibuat, Silakan Login Untuk Masuk");
+                loginAccount();
+            });
+        });
+    };
+
+    const loginAccount = () => {
+        console.log("Username : ");
+        rl.question("Username : ", (inputUser) => {
+            x = inputUser;
+            rl.question("Password : ", (inputPass) => {
+                y = inputPass;
+
+                if (x === user && y === pass) {
+                    login = "Berhasil";
+                    console.log("YEYY ANDA BERHASIL LOGIN");
+                    console.log("========================================================");
+                    console.log("clik CTRL + C")
+                } else {
+                    console.log("Username atau Password Anda Salah");
+                    i++;
+                    if (i < 3) {
+                        loginAccount();
+                    } else {
+                        console.log("Anda Telah 3x Salah Username & Password");
+                        console.log("Maaf Akun Anda Kami Blokir Sementara");
+                        console.log("Untuk Lebih lanjut, Hubungi Nomor Dia. Jika Tidak Ada Respon Lebih Baik Mundur Saja.");
+                        console.log("Sekian Dan Terima Kasih");
+                        rl.question("coba program lagi [Y/N] : ", (answer) => {
+                            j = answer.toLowerCase();
+                            if (j === 'y') {
+                                i = 0;
+                                createAccount();
+                            } else {
+                                rl.close();
+                            }
+                        });
+                    }
+                }
+            });
+        });
+    };
+
+    createAccount();
+}
+
+loginSystem();
