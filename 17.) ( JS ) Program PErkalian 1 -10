@@ -1,0 +1,19 @@
+function welcome() {
+    console.log("===============================================================");
+    console.log("       S E L A M A T  D A T A N G  D I  P R O G R A M ");
+    console.log("              MULTIPLICATION / PERKALIAN 1 -10 ");
+    console.log("===============================================================");
+}
+
+function printMultiplicationTable() {
+    for (let i = 1; i <= 10; i++) {
+        let row = "";
+        for (let j = 1; j <= 10; j++) {
+            row += `| ${i * j}  `;
+        }
+        console.log(row);
+    }
+}
+
+welcome();
+printMultiplicationTable();
