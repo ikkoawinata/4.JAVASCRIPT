@@ -1,0 +1,432 @@
+const prompt = require('prompt-sync')();
+
+function sambutan(){
+    console.log ("================================================================================");
+    console.log ("       S E L A M A T   D A T A N G   D I   P R O G R A M " );
+    console.log ("                    CONVERT SATUAN BERAT " );
+    console.log ("================================================================================");
+}
+
+function table(){
+    console.log ("================================================================================");
+    console.log ("NO |                 SATUAN BERAT               ");
+    console.log ("================================================================================");
+    console.log ("1.  | KG (KiloMeter);       ->   HG (HektoMeter);                                 |");
+    console.log ("2.  | KG (KiloMeter);       ->   DAG (DekaMeter);                                 |");
+    console.log ("3.  | KG (KiloMeter);       ->   G (Meter);                                       |");
+    console.log ("4.  | KG (KiloMeter);       ->   DG (DesiMeter);                                  |");
+    console.log ("5.  | KG (KiloMeter);       ->   CG (CentiMeter);                                 |");
+    console.log ("6.  | KG (KiloMeter);       ->   MG (GiliMeter);                                  |");
+    console.log ("7.  | HG (HektoMeter);      ->   KG (KiloMeter);                                  |");
+    console.log ("8.  | HG (HektoMeter);      ->   DAG (DekaMeter);                                 |");
+    console.log ("9.  | HG (HektoMeter);      ->   G (Meter);                                       |");
+    console.log ("10. | HG (HektoMeter);      ->   DG (DesiMeter);                                  |");
+    console.log ("11. | HG (HektoMeter);      ->   CG (CentiMeter);                                 |");
+    console.log ("12. | HG (HektoMeter);      ->   MG (GiliMeter);                                  |");
+    console.log ("13. | DAG (DekaMeter);      ->   KG (KiloMeter);                                  |");
+    console.log ("14. | DAG (DekaMeter);      ->   HG (HektoMeter);                                 |");
+    console.log ("15. | DAG (DekaMeter);      ->   G (Meter);                                       |");
+    console.log ("16. | DAG (DekaMeter);      ->   DG (DesiMeter);                                  |");
+    console.log ("17. | DAG (DekaMeter);      ->   CG (CentiMeter);                                 |");
+    console.log ("18. | DAG (DekaMeter);      ->   MG (GiliMeter);                                  |");
+    console.log ("19. | G (Meter);            ->   KG (KiloMeter);                                  |");
+    console.log ("20. | G (Meter);            ->   HG (HektoMeter);                                 |");
+    console.log ("21. | G (Meter);            ->   DAG (DekaMeter);                                 |");
+    console.log ("22. | G (Meter);            ->   DG (DesiMeter);                                  |");
+    console.log ("23. | G (Meter);            ->   CG (CentiMeter);                                 |");
+    console.log ("24. | G (Meter);            ->   MG (Gilieter);                                   |");
+    console.log ("25. | DG (DesiMeter);       ->   KG (KiloMeter);                                  |");
+    console.log ("26. | DG (DesiMeter);       ->   HG (HektoMeter);                                 |");
+    console.log ("27. | DG (DesiMeter);       ->   DAG (DekaMeter);                                 |");
+    console.log ("28. | DG (DesiMeter);       ->   G (Meter);                                       |");
+    console.log ("29. | DG (DesiMeter);       ->   CG (CentiMeter);                                 |");
+    console.log ("30. | DG (DesiMeter);       ->   MG (GiliMeter);                                  |");
+    console.log ("31. | CG (CentiMeter);      ->   KG (KiloMeter);                                  |");
+    console.log ("32. | CG (CentiMeter);      ->   HG (HektoMeter);                                 |");
+    console.log ("33. | CG (CentiMeter);      ->   DAG (DekaMeter);                                 |");
+    console.log ("34. | CG (CentiMeter);      ->   G (Meter);                                       |");
+    console.log ("35. | CG (CentiMeter);      ->   DG (DesiMeter);                                  |");
+    console.log ("36. | CG (CentiMeter);      ->   MG (GiliMeter);                                  |");
+    console.log ("37. | MG (GiliMeter);       ->   KG (KiloMeter);                                  |");
+    console.log ("38. | MG (GiliMeter);       ->   HG (HektoMeter);                                 |");
+    console.log ("39. | MG (GiliMeter);       ->   DAG (DekaMeter);                                 |");
+    console.log ("40. | MG (GiliMeter);       ->   G (Meter);                                       |");
+    console.log ("41. | MG (GiliMeter);       ->   DG (DesiMeter);                                  |");
+    console.log ("42. | MG (GiliMeter);       ->   CG (CentiMeter);                                 |");
+    console.log ("================================================================================");
+}
+
+var pil, user, rumus, user
+
+sambutan();
+
+do{
+    table();
+    var pil = parseInt(prompt("Silahkan pilih sesuai yang anda cari :"));
+
+    if ( pil == 1){
+        console.log("------ 1.) KG -> HG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 10;
+        console.log("hasilnya adalah : ", user, " * 10 =  ", rumus, " HG ");
+    }
+
+
+    else if ( pil == 2){
+        console.log("------ 2.) KG -> DAG -------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 100 ;
+        console.log("hasilnya adalah : ", user, " * 100 =  ", rumus, " DAG ");
+    }
+
+
+    else if ( pil == 3){
+        console.log("------ 3.) KG -> G --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 1000 ;
+        console.log("hasilnya adalah : ", user, " * 1000 =  ", rumus, " G ");
+    }
+
+
+    else if ( pil == 4){
+        console.log(" ------ 4.) KG -> DG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 10000 ;
+        console.log("hasilnya adalah : ", user, " * 10000 =  ", rumus, " DG ");
+    }
+
+
+    else if ( pil == 5){
+        console.log(" ------ 5.) KG -> CG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 100000 ;
+        console.log("hasilnya adalah : ", user, " * 100000 =  ", rumus, " CG ");
+    }
+
+
+    else if ( pil == 6){
+        console.log((" ------ 6.) KG -> MG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 1000000 ;
+        console.log("hasilnya adalah : ", user, " * 1000000 =  ", rumus, " MG ");
+    }
+
+
+    else if ( pil == 7){
+        console.log(" ------ 7.) HG -> KG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 10 ;
+        console.log("hasilnya adalah : ", user, " / 10 =  ", rumus, " KG ");
+    }
+
+
+    else if ( pil == 8){
+        console.log(" ------ 8.) HG -> DAG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 10 ;
+        console.log("hasilnya adalah : ", user, " * 10 =  ", rumus, " DAG ");
+    }
+
+
+    else if ( pil == 9){
+        console.log((" ------ 9.) HG -> G -------"));
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user * 100 ;
+         console.log("hasilnya adalah : ", user, " * 100 =  ", rumus, " G ");
+    }
+
+
+    else if ( pil == 10){
+        console.log((" ------ 10.) HG -> DG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user * 1000 ;
+         console.log("hasilnya adalah : ", user, " * 1000 =  ", rumus, " DG ");
+    }
+
+
+    else if ( pil == 11){
+        console.log(" ------ 11.) HG -> CG -------");
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user * 10000 ;
+         console.log("hasilnya adalah : ", user, " * 10000 =  ", rumus, " CG ");
+    }
+
+
+    else if ( pil == 12){
+        console.log(" ------ 12.) HG -> MG -------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 100000 ;
+        console.log("hasilnya adalah : ", user, " * 100000 =  ", rumus, " MG ");
+    }
+
+
+    else if ( pil == 13){
+        console.log(" ------ 13.) DAG -> KG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user / 100 ;
+         console.log("hasilnya adalah : ", user, " / 100 =  ", rumus, " KG ");
+    }
+
+
+    else if ( pil == 14){
+        console.log(" ------ 14.)DAG -> HG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user / 10 ;
+         console.log("hasilnya adalah : ", user, " / 10 =  ", rumus, " HG ");
+    }
+
+
+    else if ( pil == 15){
+        console.log(" ------ 15.)DAG -> G --------");
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user * 10 ;
+         console.log("hasilnya adalah : ", user, " * 10 =  ", rumus, " G ");
+    }
+
+
+    else if ( pil == 16){
+        console.log((" ------ 16.) DAG -> DG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 100 ;
+        console.log("hasilnya adalah : ", user, " * 100 =  ", rumus, " DG ");
+    }
+
+
+    else if ( pil == 17){
+        console.log((" ------ 17.) DAG -> CG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 1000 ;
+        console.log("hasilnya adalah : ", user, " * 1000 =  ", rumus, " CG ");
+    }
+
+
+    else if ( pil == 18){
+        console.log(" ------ 18.) DAG -> MG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user * 10000 ;
+        console.log("hasilnya adalah : ", user, " * 10000 =  ", rumus, " MG ");
+    }
+
+
+    else if ( pil == 19){
+        console.log((" ------ 19.)G -> KG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user / 1000 ;
+         console.log("hasilnya adalah : ", user, " / 1000 =  ", rumus, " KG ");
+    }
+
+
+    else if ( pil == 20){
+        console.log((" ------ 20.)G -> HG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 100 ;
+        console.log("hasilnya adalah : ", user, " / 1000 =  ", rumus, " KG ");
+    }
+
+
+    else if ( pil == 21){
+        console.log(("  ------ 21.)G -> DAG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 10 ;
+        console.log("hasilnya adalah : ", user, " / 100 =  ", rumus, " KG ");
+    }
+
+
+    else if ( pil == 22){
+        console.log((" ------ 22.)G -> DG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+     rumus = user * 10 ;
+     console.log("hasilnya adalah : ", user, " * 10 =  ", rumus, " DG ");
+    }
+
+
+    else if ( pil == 23){
+       console.log(("  ------ 23.) G -> CG -------"));
+        user = parseInt(prompt("Masukkan angka : "));
+          rumus = user * 100 ;
+          console.log("hasilnya adalah : ", user, " * 100 =  ", rumus, " CG ");
+    }
+
+
+
+    else if ( pil == 24){
+        console.log((" ------ 24.) G -> MG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+           rumus = user * 1000 ;
+           console.log("hasilnya adalah : ", user, " * 1000 =  ", rumus, " MG ");
+    }
+
+
+
+    
+    else if ( pil == 25){
+        console.log((" ------ 25.) DG -> KG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+       rumus = user * 10000 ;
+       console.log("hasilnya adalah : ", user, " * 10000 =  ", rumus, " KG ");
+    }
+
+
+    else if ( pil == 26){
+    console.log((" ------ 26.) DG -> HG --------"));
+    user = parseInt(prompt("Masukkan angka : "));
+    rumus = user / 1000 ;
+    console.log("hasilnya adalah : ", user, " / 1000 =  ", rumus, " HG ");
+    }
+
+
+
+    else if ( pil == 27){
+        console.log(" ------ 27.) DG -> DAG ---------");
+        user = parseInt(prompt("Masukkan angka : "));
+           rumus = user / 100 ;
+           console.log("hasilnya adalah : ", user, " / 100 =  ", rumus, " DAG ");
+    }
+
+
+    else if ( pil == 28){
+        console.log((" ------ 28.) DG -> G -------"));
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user / 10 ;
+         console.log("hasilnya adalah : ", user, " / 10 =  ", rumus, " G ");
+    }
+
+
+
+    else if ( pil == 29){
+        console.log((" ------ 29.) DG -> CG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user * 10 ;
+         console.log("hasilnya adalah : ", user, " * 10 =  ", rumus, " CG ");
+    }
+
+
+
+    else if ( pil == 30){
+    console.log((" ------ 30.) DG -> MG -------"));
+    user = parseInt(prompt("Masukkan angka : "));
+    rumus = user * 100 ;
+    console.log("hasilnya adalah : ", user, " * 100 =  ", rumus, " MG ");
+    }
+
+
+
+    else if ( pil == 31){
+        console.log((" ------ 31.) CG -> KG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 100000 ;
+        console.log("hasilnya adalah : ", user, " / 100000 =  ", rumus, " KG ");
+    }
+
+
+    else if ( pil == 32){
+        console.log(("  ------ 32.) CG -> HG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 10000 ;
+        console.log("hasilnya adalah : ", user, " / 10000 =  ", rumus, " HG ");
+    }
+
+
+    else if ( pil == 33){
+        console.log((" ------ 33.) CG -> DAG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 1000 ;
+        console.log("hasilnya adalah : ", user, " / 1000 =  ", rumus, " DAG ");
+    }
+
+
+    else if ( pil == 34){
+        console.log((" ------ 34.) CG -> G --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user / 100 ;
+         console.log("hasilnya adalah : ", user, " / 100 =  ", rumus, " G ");
+    }
+
+
+
+    else if ( pil == 35){
+        console.log((" ------ 35.) CG -> DG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user / 10 ;
+         console.log("hasilnya adalah : ", user, " / 10 =  ", rumus, " DG ");
+    }
+
+
+    
+    else if ( pil == 36){
+        console.log((" ------ 36.) CG -> MG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+         rumus = user * 10 ;
+         console.log("hasilnya adalah : ", user, " * 10 =  ", rumus, " MG ");
+    }
+
+
+
+    else if ( pil == 37){
+        console.log((" ----- 37.) MG -> KG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+          rumus = user / 1000000 ;
+          console.log("hasilnya adalah : ", user, " / 1000000 =  ", rumus, " KG ");
+    }
+
+
+
+
+    else if ( pil == 38){
+        console.log(("------ 38.) MG -> HG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 100000 ;
+        console.log("hasilnya adalah : ", user, " / 100000 =  ", rumus, " HG ");
+    }
+
+
+
+
+    else if ( pil == 39){
+        console.log(("------- 39.) MG -> DAG --------"));
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 10000 ;
+        console.log("hasilnya adalah : ", user, " / 10000 =  ", rumus, " DAG ");
+    }
+
+
+
+    else if ( pil == 40){
+        console.log("------ 40.) MG  -> G --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 1000 ;
+        console.log("hasilnya adalah : ", user, " / 1000 =  ", rumus, " G ");
+    }
+
+
+    else if ( pil == 41){
+        console.log("------ 41.) MG -> DG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+   rumus = user / 100 ;
+   console.log("hasilnya adalah : ", user, " / 100 =  ", rumus, " DG ");
+    }
+
+
+    else if ( pil == 42){
+        console.log("------ 42.) MG -> CG --------");
+        user = parseInt(prompt("Masukkan angka : "));
+        rumus = user / 10 ;
+        console.log("hasilnya adalah : ", user, " / 10 =  ", rumus, " CG ");
+    }
+
+
+    else { 
+        console.log ( "Pilihan tidak sesuai dengan tabel " );
+        console.log ( "Silahkan Masukkan pilihan anda sesuai dengan tabel " );
+    }
+
+    console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    j = prompt("Mau coba program lagi ? [Y/N] : ");
+
+
+    }while (j == 'Y' || j == 'y');
+    console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    console.log("Terima kasih telah menggunakan program ini ");
+    console.log("Made by Ikkoc_awinata");
+
+
