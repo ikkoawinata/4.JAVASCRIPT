@@ -1,0 +1,59 @@
+function main(){
+    const readline = require('readline')
+    const r1 = readline.createInterface({
+        input:process.stdin,
+        output:process.stdout
+    });
+
+    r1.question('and i can still see it all', function(input){
+        console.log();
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log();
+console.log();
+console.log();
+
+r1.question('', function(input){
+
+
+
+r1.question('all of you, all of me', function(input){
+    console.log();
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+console.log();
+console.log();
+console.log();
+
+r1.question('', function(input){
+
+
+
+    r1.question('i once believed love would be', function(input){
+        console.log();
+    console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+    console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+    console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+    console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+    console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+    console.log(" A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+    console.log();
+    console.log();
+    console.log();
+r1.close()
+    });
+});
+});
+});
+});
+}
+
+main();
