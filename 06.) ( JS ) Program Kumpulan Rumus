@@ -282,8 +282,9 @@ else if  (pilihan == 6){
         console.log("------- 21.) MENGHITUNG VOLUME LIMAS SEGIEMPAT ---------");
     var LALAS = parseFloat(prompt("Masukkan luas alas limas : "));
     var T = parseFloat(prompt("Masukkan tinggi alas limas : "));
-    rumus =  1/3*LALAS*T;
-    console.log("Rumusnya yaitu : Volume = 1/3 * Luas alas * tinggi = 1/3 * ", LALAS, " * ", T, " = ", rumus);
+    L_alas = LALAS * LALAS;
+    rumus =  1/3*L_alas*T;
+    console.log("Rumusnya yaitu : Volume = 1/3 * Luas alas * tinggi = 1/3 * ", L_alas, " * ", T, " = ", rumus);
 }
         
 
