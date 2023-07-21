@@ -1,5 +1,5 @@
 //ini sebagai include pada JAVASCRIPT
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
 function sambutan(){
     console.log( "======================================================================");
@@ -270,11 +270,13 @@ else if  (pilihan == 6){
 
         else if  (pilihan == 20){
             console.log("-------  20.) MENGHITUNG LUAS PERMUKAAN LIMAS SEGIEMPAT ---------");
-        var panjang = parseFloat(prompt("Masukkan panjang balok : "));
-        var lebar = parseFloat(prompt("Masukkan luas alas balok : "));
-        var tinggi = parseFloat(prompt("Masukkan tinggi balok : "))
-        rumusss =  panjang * lebar * tinggi;
-        console.log("Rumusnya yaitu : Volume = Panjang * lebar * tinggi = ", panjang, " * ", lebar, " * ", tinggi, " = ", rumusss);
+        var sisi = parseFloat(prompt("Masukkan sisi alas : "));
+        var tinggi = parseFloat(prompt("Masukkan tinggi alas : "));
+        L_alas = sisi * sisi;
+        L_segitiga = 1.0/2.0 * sisi * t;
+        L_limas =  (4 * L_segitiga) + L_alas;
+        console.log("Rumusnya yaitu : Luas = (4 * Luas Segitiga) + Luas Alas = (4 * " , L_segitiga , " ) + " , L_alas , " = " , L_limas );
+        console.log("hasilnya adalah : " , L_limas , " cm ")
     }
 
     
@@ -441,4 +443,3 @@ while(j == 'y' || j == 'Y'){
     console.log("Terima kasih telah menggunakan program ini");
     console.log("Made by Ikkoc_awinata");
 };
-
